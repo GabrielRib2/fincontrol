@@ -33,7 +33,7 @@ class DashboardPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: _bg,
+      backgroundColor: const Color(0xFFF0FFF4),
       body: SafeArea(
         child: SingleChildScrollView(
           padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
@@ -88,7 +88,7 @@ class DashboardPage extends StatelessWidget {
         ),
         Row(
           children: [
-            _headerIconBtn(Icons.notifications_outlined),
+            _headerIconBtn(Icons.menu), // Ícone de três barrinhas
             const SizedBox(width: 6),
             _headerIconBtn(Icons.logout_outlined),
           ],
@@ -252,3 +252,5 @@ class DashboardPage extends StatelessWidget {
     );
   }
 }
+
+//flutter run -d edge -t lib/dashboard.dart
